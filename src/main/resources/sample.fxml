@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Podstawowe Informacje">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="8.0" layoutY="2.0" text="Firma">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="company_tfield" layoutX="8.0" layoutY="27.0" text="Firma" />
+                        <Label layoutX="9.0" layoutY="54.0" text="Nr.Zam">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="productionDate_dpicker" layoutX="9.0" layoutY="129.0" prefHeight="25.0" prefWidth="147.0" />
+                        <Label layoutX="11.0" layoutY="104.0" text="Data Prod.">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="219.0" layoutY="2.0" text="Informacje dodatkowe:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="order_tfield" layoutX="8.0" layoutY="79.0" text="Zam" />
+                        <TextArea fx:id="additionalInfo_tarea" layoutX="219.0" layoutY="29.0" prefHeight="126.0" prefWidth="379.0" text="Dodatkowe" />
+                        <Separator layoutY="155.0" prefHeight="20.0" prefWidth="600.0" />
+                        <Label layoutX="8.0" layoutY="163.0" text="Nr. terminala elte">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="217.0" text="Model">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="-2.0" layoutY="314.0" text="Nr. seryjny">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="268.0" text="Wer. syst.">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="165.0" layoutY="176.0" prefHeight="25.0" prefWidth="67.0" text="Karta SD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="terminalNumber_tfield" layoutX="2.0" layoutY="186.0" text="nr term" />
+                        <TextField fx:id="terminalModel_tfield" layoutX="2.0" layoutY="243.0" text="model" />
+                        <TextField fx:id="terminalSystemVersion_tfield" layoutX="2.0" layoutY="293.0" text="wer sys" />
+                        <TextField fx:id="terminalSerialNumber_tfield" layoutX="2.0" layoutY="339.0" text="nr ser" />
+                        <ChoiceBox fx:id="terminalProgramVersion_cBox" layoutX="158.0" layoutY="256.0" prefWidth="150.0"/>
+                        <Label layoutX="165.0" layoutY="230.0" text="Wer. programu">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                         <ChoiceBox fx:id="terminalConfiguration_cBox" layoutX="158.0" layoutY="314.0" prefWidth="150.0"  >
+
+                         </ChoiceBox>
+                        <ChoiceBox fx:id="cardCapacity_cBox" layoutX="158.0" layoutY="205.0" prefWidth="150.0"/>
+                        <Label layoutX="166.0" layoutY="281.0" text="Konfiguracja">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="322.0" layoutY="168.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <TabPane layoutX="322.0" layoutY="165.0" prefHeight="203.0" prefWidth="210.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="AutoMapa">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="autoMapLicense_tfield" layoutX="14.0" layoutY="33.0" text="lic" />
+                                          <Label layoutX="14.0" layoutY="8.0" text="Licencja">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="14.0" layoutY="58.0" text="Data Rej.">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker fx:id="autoMapRegistrationDate_dpicker" layoutX="14.0" layoutY="83.0" />
+                                          <Label layoutX="14.0" layoutY="108.0" text="Wer. licencji">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox fx:id="autoMapLicenseVersion_cBox" layoutX="14.0" layoutY="133.0" prefWidth="150.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Pozostałe">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                        <Separator layoutX="532.0" layoutY="169.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Button fx:id="save_btn" layoutX="550.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleButtonClick" text="Dodaj" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+              </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
