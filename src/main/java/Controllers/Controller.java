@@ -3,8 +3,6 @@ package Controllers;
 import Model.AutoMap;
 import Model.Task;
 import Model.Terminal;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -30,10 +28,10 @@ public class Controller implements Initializable {
     public Button save_btn;
 
 
-    private ChoiceBoxesController choiceBoxesController = new ChoiceBoxesController();
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        ChoiceBoxesController choiceBoxesController = new ChoiceBoxesController();
         choiceBoxesController.loadMemoryCardOptions(cardCapacity_cBox);
         choiceBoxesController.loadSystemVersionOptions(terminalProgramVersion_cBox);
         choiceBoxesController.loadTerminalConfigurationOptions(terminalConfiguration_cBox);
