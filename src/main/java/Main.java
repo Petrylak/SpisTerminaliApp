@@ -11,7 +11,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         BasicConfigurator.configure();
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("{java.main.stage.title}");
+        primaryStage.setTitle("Spis Terminali");
         primaryStage.setScene(new Scene(root, 600, 400));
 
         primaryStage.show();
